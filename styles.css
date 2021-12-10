@@ -12,10 +12,7 @@ body {
 }
 
 button {
-  background: #3882f6;
-  border: 0;
   border-radius: 8px;
-  color: #f9faf8;
   font-size: 1.7rem;
   font-weight: bold;
   padding: 8px 30px;
@@ -34,7 +31,8 @@ h2 {
   margin: 0;
 }
 
-h3 {
+h3,
+.quote-thor {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
@@ -76,6 +74,12 @@ ul {
 
 
 /* THIS WEBSITE IS AWESOME SECTION */
+.awesome button {
+  background: #3882f6;
+  border: 0;
+  color: #f9faf8;
+}
+
 .awesome {
   background: #1f2937;
   display: flex;
@@ -85,13 +89,12 @@ ul {
 .awesome-left {
   color: #f9faf8;
   display: flex;
-  flex: 1;
   flex-direction: column;
   padding: 0 30px 0 0;
 }
 
 .awesome-left p {
-  padding: 12px 0;
+  padding: 10px 0 15px;
 }
 
 .awesome-right {
@@ -100,27 +103,28 @@ ul {
   justify-content: flex-end;
 }
 
-.awesome-right img {
-  border-radius: 8px;
+.awesome-image {
+  border-radius: 10px;
+  flex-shrink: 0;
+  height: auto;
   object-fit: contain;
-  width: 100%;
+  width: 350px;
 }
-
 
 /* WHY ARE WE SO AWESOME SECTION */
 .card {
   align-items: center;
-  border: 1px dashed rgb(1, 196, 33);
   display: flex;
   flex: 1;
   flex-direction: column;
+  max-width: 180px;
   text-align: center;
 }
 
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 45px;
+  gap: 5.5rem;
   justify-content: space-between;
   margin: 30px 0;
 }
@@ -130,9 +134,11 @@ ul {
   border-radius: 8px;
   height: 150px;
   width: 150px;
+
 }
 .card p {
   color: #1f2937;
+  padding: 1rem 0;
 }
 
 .why-awesome {
@@ -146,33 +152,48 @@ ul {
 
 /* QUOTE SECTION */
 .quote {
-  align-items: center;
   background: #e5e7eb;
   color: #1f2937;
   display: flex;
   font-size: 2em;
-  font-style: italic;
   flex-direction: column;
   padding: 60px 16vw;
 }
 
+.quote-thor {
+  text-align: right;
+}
+
 .quote p {
+  font-style: italic;
   font-size: 3rem;
 }
 
 
 /* CALL TO ACTION SECTION */
+.blue-box button {
+  background: #3882f6;
+  border-color: #f9faf8;
+  border-style: solid;
+  color: #f9faf8;
+}
+
 .action {
   align-items: center;
   color: #f9faf8;
   display: flex;
   flex-direction: column;
-  padding: 30px 10vw;
+  padding: 40px 10vw;
 }
 
 .blue-box {
+  align-items: flex-end;
   background: #3882f6;
+  border-radius: 8px;
+  box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
+  padding: 3rem 8rem;
   width: 80vw;
 }
 
